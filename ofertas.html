@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market Jeaks - Ofertas</title>
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Slick Carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
     <link rel="stylesheet" href="CSS/oferta.css">
 </head>
+
 <body>
-    <!-- Header -->
     <header>
         <div class="container header-content">
             <div class="logo">
-                <img src="img/pixelcut-export.png" alt="">
+                <img src="img/pixelcut-export.png" alt="Logo Market Jeaks">
                 <h2>Market Jeaks</h2>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Tienda</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
                     <li><a href="contact.html">Contacto</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito (0)</a></li>
+                    <li>
+                        <a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito (<span class="cart-count">0</span>)</a>
+                    </li>
                 </ul>
             </nav>
-            <!-- Barra de búsqueda -->
             <div class="search-bar">
                 <input type="text" placeholder="Buscar productos..." />
                 <button type="submit"><i class="fas fa-search"></i></button>
@@ -34,123 +34,140 @@
         </div>
     </header>
 
-    <!-- Main content -->
     <main>
         <section class="banner">
             <h1>Ofertas del día</h1>
             <p>Aprovecha nuestras mejores ofertas por tiempo limitado</p>
         </section>
 
-        <!-- Carrusel de Ofertas -->
         <section class="offer-carousel">
             <h2>Productos Destacados</h2>
             <div class="carousel">
-                <div class="prod">
-                    <img src="img/113.jpg" alt="Producto 1">
+                <div class="prod" data-id="1" data-name="PELUCHE" data-price="90000" data-image="img/113.jpg">
+                    <img src="img/113.jpg" alt="PELUCHE">
                     <p>PELUCHE</p>
                     <p><span class="old-price">$100.000</span> <span class="new-price">$90.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
-                <div class="prod">
-                    <img src="img/1447_1.jpg" alt="Producto 2">
-                    <p>lavadora ace</p>
+                <div class="prod" data-id="2" data-name="Lavadora Ace" data-price="320000" data-image="img/1447_1.jpg">
+                    <img src="img/1447_1.jpg" alt="Lavadora Ace">
+                    <p>Lavadora Ace</p>
                     <p><span class="old-price">$400.000</span> <span class="new-price">$320.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
-                <div class="prod">
-                    <img src="img/24bf5639a7db78c31aa9fa963be8.jpg" alt="Producto 3">
+                <div class="prod" data-id="3" data-name="Televisor Smart 50''" data-price="2000000" data-image="img/24bf5639a7db78c31aa9fa963be8.jpg">
+                    <img src="img/24bf5639a7db78c31aa9fa963be8.jpg" alt="Televisor Smart 50''">
                     <p>Televisor Smart 50''</p>
                     <p><span class="old-price">$2.500.000</span> <span class="new-price">$2.000.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
-                <div class="prod">
-                    <img src="img/alaska01.jpg" alt="Producto 4">
-                    <p>lamparas de centro de mesa</p>
+                <div class="prod" data-id="4" data-name="Lamparas de centro de mesa" data-price="100000" data-image="img/alaska01.jpg">
+                    <img src="img/alaska01.jpg" alt="Lamparas de centro de mesa">
+                    <p>Lamparas de centro de mesa</p>
                     <p><span class="old-price">$150.000</span> <span class="new-price">$100.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
-                <!-- Más productos añadidos -->
-                <div class="prod">
-                    <img src="img/carne-de-res.jpg" alt="Producto 5">
-                    <p>filete de carne 1k</p>
+                <div class="prod" data-id="5" data-name="Filete de carne 1k" data-price="25000" data-image="img/carne-de-res.jpg">
+                    <img src="img/carne-de-res.jpg" alt="Filete de carne 1k">
+                    <p>Filete de carne 1k</p>
                     <p><span class="old-price">$30.000</span> <span class="new-price">$25.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
-                <div class="prod">
-                    <img src="img/huevos-kikes-l-x-30und.jpg" alt="Producto 6">
-                    <p>huevos-kikes</p>
+                <div class="prod" data-id="6" data-name="Huevos Kikes" data-price="17000" data-image="img/huevos-kikes-l-x-30und.jpg">
+                    <img src="img/huevos-kikes-l-x-30und.jpg" alt="Huevos Kikes">
+                    <p>Huevos Kikes</p>
                     <p><span class="old-price">$20.000</span> <span class="new-price">$17.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
-                <div class="prod">
-                    <img src="img/PlatanosVerdesBarranquilla.jpg" alt="Producto 7">
+                <div class="prod" data-id="7" data-name="Platanos 1K" data-price="9000" data-image="img/PlatanosVerdesBarranquilla.jpg">
+                    <img src="img/PlatanosVerdesBarranquilla.jpg" alt="Platanos 1K">
                     <p>Platanos 1K</p>
                     <p><span class="old-price">$10.000</span> <span class="new-price">$9.000</span></p>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </div>
             </div>
         </section>
 
-        <!-- Lista de Ofertas Especiales con imágenes -->
         <section class="offer-list">
             <h2>Ofertas Especiales</h2>
             <ul>
-                <li>
+                <li data-id="8" data-name="Televisor Smart 50''" data-price="1750000" data-image="img/24bf5639a7db78c31aa9fa963be8.jpg">
                     <img src="img/24bf5639a7db78c31aa9fa963be8.jpg" alt="Televisor Smart 50''" class="offer-image">
                     <div class="offer-text">
                         <p>Televisor Smart 50''</p>
                         <p><span class="old-price">$2.500.000</span> <span class="new-price">$1.750.000</span> (Descuento 30%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
-                <li>
+                <li data-id="9" data-name="Laptop Gamer" data-price="2250000" data-image="img/laptop.jpg">
                     <img src="img/laptop.jpg" alt="Laptop Gamer" class="offer-image">
                     <div class="offer-text">
                         <p>Laptop Gamer</p>
                         <p><span class="old-price">$3.000.000</span> <span class="new-price">$2.250.000</span> (Descuento 25%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
-                <li>
+                <li data-id="10" data-name="Celular Samsung Galaxy S21" data-price="680000" data-image="img/SM-G990_S21FE_Back_ZA_01.jpg">
                     <img src="img/SM-G990_S21FE_Back_ZA_01.jpg" alt="Celular Samsung Galaxy S21" class="offer-image">
                     <div class="offer-text">
                         <p>Celular Samsung Galaxy S21</p>
-                        <p><span class="old-price">$800000</span> <span class="new-price">$680.000</span> (Descuento 15%)</p>
+                        <p><span class="old-price">$800.000</span> <span class="new-price">$680.000</span> (Descuento 15%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
-                <li>
+                <li data-id="11" data-name="Audífonos Bluetooth" data-price="180000" data-image="img/bluetooth.png">
                     <img src="img/bluetooth.png" alt="Audífonos Bluetooth" class="offer-image">
                     <div class="offer-text">
                         <p>Audífonos Bluetooth</p>
                         <p><span class="old-price">$300.000</span> <span class="new-price">$180.000</span> (Descuento 40%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
-                <li>
+                <li data-id="12" data-name="Tablet iPad 10''" data-price="950350" data-image="img/ipad-10-9.png">
                     <img src="img/ipad-10-9.png" alt="Tablet iPad 10''" class="offer-image">
                     <div class="offer-text">
                         <p>Tablet iPad 10''</p>
-                        <p><span class="old-price">$ 1.145.000</span> <span class="new-price">$950.350</span> (Descuento 17%)</p>
+                        <p><span class="old-price">$1.145.000</span> <span class="new-price">$950.350</span> (Descuento 17%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
-                <li>
+                <li data-id="13" data-name="Cámara Reflex Canon" data-price="1474400" data-image="img/camara-canon.jpg">
                     <img src="img/camara-canon.jpg" alt="Cámara Reflex Canon" class="offer-image">
                     <div class="offer-text">
                         <p>Cámara Reflex Canon</p>
                         <p><span class="old-price">$1.843.000</span> <span class="new-price">$1.474.400</span> (Descuento 20%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
-                <li>
+                <li data-id="14" data-name="Consola PlayStation 5" data-price="2396610" data-image="img/ps5.jpeg">
                     <img src="img/ps5.jpeg" alt="Consola PlayStation 5" class="offer-image">
                     <div class="offer-text">
                         <p>Consola PlayStation 5</p>
-                        <p><span class="old-price">$2.662.900</span> <span class="new-price">$2396610</span> (Descuento 10%)</p>
+                        <p><span class="old-price">$2.662.900</span> <span class="new-price">$2.396.610</span> (Descuento 10%)</p>
                     </div>
+                    <button class="add-to-cart-btn">Añadir al carrito</button>
                 </li>
             </ul>
         </section>
-          <!-- Sección de Categorías -->
-          <section class="categories">
+
+        <section class="categories">
             <h2>Explora por Categorías</h2>
             <div class="category-grid">
-                <div><img src="img/electronica.png" alt="Electrónica"><p>Electrónica</p></div>
-                <div><img src="img/disfraz.png" alt="Ropa"><p>Ropa</p></div>
-                <div><img src="img/lampara-de-techo.png" alt="Hogar"><p>Hogar</p></div>
-                <div><img src="img/deporte.png" alt="Deportes"><p>Deportes</p></div>
+                <div><img src="img/electronica.png" alt="Electrónica">
+                    <p>Electrónica</p>
+                </div>
+                <div><img src="img/disfraz.png" alt="Ropa">
+                    <p>Ropa</p>
+                </div>
+                <div><img src="img/lampara-de-techo.png" alt="Hogar">
+                    <p>Hogar</p>
+                </div>
+                <div><img src="img/deporte.png" alt="Deportes">
+                    <p>Deportes</p>
+                </div>
             </div>
         </section>
 
-        <!-- Carrusel de Marcas -->
         <section class="brands-carousel">
             <h2>Nuestras Marcas</h2>
             <div class="carousel brands">
@@ -161,7 +178,6 @@
             </div>
         </section>
 
-        <!-- Newsletter -->
         <section class="newsletter">
             <h2>Suscríbete a nuestro boletín</h2>
             <p>Recibe las últimas ofertas y novedades directamente en tu bandeja de entrada</p>
@@ -171,9 +187,6 @@
             </form>
         </section>
 
-        <!-- Resto del contenido... -->
-
-        <!-- Footer -->
         <footer>
             <div class="footer-content">
                 <p>&copy; 2024 Market Jeaks - Todos los derechos reservados</p>
@@ -184,12 +197,12 @@
                 </ul>
             </div>
         </footer>
+    </main>
 
-    <!-- Scripts -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('.carousel').slick({
                 dots: false,
                 infinite: true,
@@ -197,9 +210,59 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows:false
+                arrows: false
             });
+
+            // Código para manejar el carrito
+            const cartCountSpan = document.querySelector('.cart-count');
+
+            // Cargar carrito desde localStorage al iniciar
+            function loadCart() {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cartCountSpan.textContent = cart.length;
+            }
+
+            // Añadir un producto al carrito
+            function addToCart(product) {
+                const cart = JSON.parse(localStorage.getItem('cart')) || [];
+                cart.push(product);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                cartCountSpan.textContent = cart.length;
+                alert(`${product.name} ha sido añadido al carrito.`);
+            }
+
+            // Evento para los botones del carrusel
+            document.querySelectorAll('.offer-carousel .add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const prodElement = event.target.closest('.prod');
+                    const product = {
+                        id: prodElement.dataset.id,
+                        name: prodElement.dataset.name,
+                        price: parseFloat(prodElement.dataset.price),
+                        image: prodElement.dataset.image
+                    };
+                    addToCart(product);
+                });
+            });
+
+            // Evento para los botones de la lista de ofertas
+            document.querySelectorAll('.offer-list .add-to-cart-btn').forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const listItem = event.target.closest('li');
+                    const product = {
+                        id: listItem.dataset.id,
+                        name: listItem.dataset.name,
+                        price: parseFloat(listItem.dataset.price),
+                        image: listItem.dataset.image
+                    };
+                    addToCart(product);
+                });
+            });
+
+            // Cargar carrito al inicio
+            loadCart();
         });
     </script>
 </body>
+
 </html>
