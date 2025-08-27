@@ -1,0 +1,399 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #00171f;
+}
+
+/* Header */
+header {
+    background-color:#00a8e8;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 4px solid #00a8e8;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .logo h2 {
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #039cd8;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #00171f;
+}
+
+/* Search Bar */
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+}
+
+header .search-bar button {
+    background-color: #039cd8;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header .search-bar button:hover {
+    background-color: #00171f;
+}
+
+/* Main Banner */
+.banner {
+    background-color: #007ea7;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* Offer Carousel */
+.offer-carousel {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+}
+
+.offer-carousel h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.offer-carousel .carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offer-carousel .carousel div {
+    text-align: center;
+    padding: 10px;
+
+}
+.offer-carousel .carousel .prod{
+    border:  1px solid #888;
+    border-radius: 20px;
+    margin: 5px;
+ height: 300px;
+}
+
+.offer-carousel .carousel img {
+    width: 100%;
+    max-width: 200px;
+padding: 10px;
+margin-left: 10px;
+}
+
+.offer-carousel .carousel p {
+    font-size: 18px;
+    color: #00171f;
+
+}
+
+/* Offer List */
+.offer-list {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.offer-list h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.offer-list ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.offer-list ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.offer-list ul li i {
+    color: #00171f;
+    margin-right: 10px;
+}
+/* Precio anterior (tachado) */
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 16px;
+}
+
+/* Precio nuevo */
+.new-price {
+    color: #00171f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* Categories */
+.categories {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+}
+
+.categories h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.categories .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categories .category-grid div {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.categories .category-grid div:hover {
+    transform: scale(1.05);
+}
+
+.categories .category-grid img {
+    width: 50%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Brands Carousel */
+.brands-carousel {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.brands-carousel h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.brands-carousel .carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brands-carousel .carousel div {
+    text-align: center;
+    padding: 10px;
+}
+
+.brands-carousel .carousel img {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Estilo para las imágenes de la lista de ofertas especiales */
+/* Estilo para las imágenes de la lista de ofertas especiales */
+.offer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; /* Cambiado a flex para alineación horizontal */
+    /* Añade espacio entre cada elemento */
+}
+
+/* Estilo para las imágenes de la lista de ofertas especiales */
+.offer-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se distribuyan en varias filas si no caben en una sola */
+   /* Distribuye los elementos uniformemente */
+}
+
+.offer-list ul li {
+    display: flex;
+    flex-direction: column; /* Organiza el contenido (imagen, texto, precios) en una columna */
+    align-items: center;
+    width: 15%; /* Cada elemento ocupa el 30% del ancho del contenedor */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin:  10px;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan dentro del ancho */
+    transition: box-shadow 0.3s ease;
+}
+
+.offer-list ul li:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-image {
+    width: 100%;
+    height: auto;
+    max-width: 150px; /* Limita el tamaño máximo de la imagen */
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.offer-text {
+    text-align: center;
+}
+
+.offer-text p {
+    margin: 5px 0;
+}
+
+
+/* Newsletter */
+.newsletter {
+    background-color: #00171f;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: inline-block;
+}
+
+.newsletter form input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter form button {
+    background-color: #fff;
+    color: #00171f;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter form button:hover {
+    background-color: #e5e5e5;
+}
+
+/* Footer */
+footer {
+    background-color: #00171f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .footer-content ul li {
+    margin: 0 10px;
+}
+
+footer .footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-content ul li a:hover {
+    color: #007ea7;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Jeaks</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="shortcut icon" href="img/ico.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/pixelcut-export.png" alt="Logo de Market Jeaks">
+                <h2>Market Jeaks</h2>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link">Tienda</a></li>
+                    <li><a href="ofertas.html" class="nav-link">Ofertas</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                    <li>
+                        <a href="carrito.html" class="nav-link nav-cart"><i class="fas fa-shopping-cart"></i> Carrito (<span class="cart-count">0</span>)</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos..." class="search-input" />
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="container hero-content">
+                <h1 class="hero-title">Bienvenido a Market Jeaks</h1>
+                <p class="hero-subtitle">Encuentra los mejores productos al mejor precio</p>
+                <a href="#" class="btn hero-btn">Explorar productos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-carousel-section">
+        <div class="carousel-container">
+            <button class="carousel-button left-btn"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/electronica.png" alt="Icono de electrodomésticos" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Electrodomésticos</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/carne.png" alt="Icono de carne" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Carnes</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/deporte.png" alt="Icono de deporte" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Deporte</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/disfraz.png" alt="Icono de ropa y accesorio" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Ropa y Accesorio</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/articulos-de-aseo.png" alt="Icono de artículos de aseo" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Aseo</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/espiritu.png" alt="Icono de licores" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Licores</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/juguete-de-peluche.png" alt="Icono de juguete" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Juguetes</a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""> <img src="img/lampara-de-techo.png" alt="Icono de hogar y decoración" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Hogar y Decoración</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"> <img src="img/ordenador-portatil.png" alt="Icono de tecnología" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Tecnología</a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#"><img src="img/verduras.png" alt="Icono de verduras" class="carousel-icon" /></a>
+                    <a href="#" class="category-name">Verduras</a>
+                </div>
+            </div>
+            <button class="carousel-button right-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <h2 class="products-title">Nuestros Productos</h2>
+            <div class="product-grid">
+                <div class="product-card" data-id="1" data-name="Televisor Smart 4K" data-price="450.00">
+                    <img src="https://i.ibb.co/6P02mG3/tv-lg.jpg" alt="Televisor Smart 4K" class="product-image" />
+                    <h3 class="product-name">Televisor Smart 4K</h3>
+                    <p class="product-price">$450.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="2" data-name="Laptop Gamer" data-price="1200.00">
+                    <img src="https://i.ibb.co/xL826H4/laptop-gamer.jpg" alt="Laptop Gamer" class="product-image" />
+                    <h3 class="product-name">Laptop Gamer</h3>
+                    <p class="product-price">$1200.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="3" data-name="Refrigerador Inverter" data-price="850.00">
+                    <img src="https://i.ibb.co/p3D1x4n/refrigerador.jpg" alt="Refrigerador Inverter" class="product-image" />
+                    <h3 class="product-name">Refrigerador Inverter</h3>
+                    <p class="product-price">$850.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="4" data-name="Lavadora de Carga Frontal" data-price="600.00">
+                    <img src="https://i.ibb.co/n6R48Rj/lavadora.jpg" alt="Lavadora de Carga Frontal" class="product-image" />
+                    <h3 class="product-name">Lavadora de Carga Frontal</h3>
+                    <p class="product-price">$600.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="5" data-name="Audífonos Bluetooth" data-price="75.00">
+                    <img src="https://i.ibb.co/tCKN0mP/audifonos.jpg" alt="Audífonos Bluetooth" class="product-image" />
+                    <h3 class="product-name">Audífonos Bluetooth</h3>
+                    <p class="product-price">$75.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="6" data-name="Cafetera Programable" data-price="90.00">
+                    <img src="https://i.ibb.co/3k2T2Yy/cafetera.jpg" alt="Cafetera Programable" class="product-image" />
+                    <h3 class="product-name">Cafetera Programable</h3>
+                    <p class="product-price">$90.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="7" data-name="Aspiradora Robot" data-price="250.00">
+                    <img src="https://i.ibb.co/S7691m4/aspiradora-robot.jpg" alt="Aspiradora Robot" class="product-image" />
+                    <h3 class="product-name">Aspiradora Robot</h3>
+                    <p class="product-price">$250.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="8" data-name="Horno de Microondas" data-price="120.00">
+                    <img src="https://i.ibb.co/P44t4vj/horno-microondas.jpg" alt="Horno de Microondas" class="product-image" />
+                    <h3 class="product-name">Horno de Microondas</h3>
+                    <p class="product-price">$120.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="9" data-name="Secadora de Ropa" data-price="550.00">
+                    <img src="https://i.ibb.co/c1t9G9y/secadora.jpg" alt="Secadora de Ropa" class="product-image" />
+                    <h3 class="product-name">Secadora de Ropa</h3>
+                    <p class="product-price">$550.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="10" data-name="Plancha de Ropa" data-price="40.00">
+                    <img src="https://i.ibb.co/0J92b2t/plancha.jpg" alt="Plancha de Ropa" class="product-image" />
+                    <h3 class="product-name">Plancha de Ropa</h3>
+                    <p class="product-price">$40.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="11" data-name="Tostadora de Pan" data-price="30.00">
+                    <img src="https://i.ibb.co/q1z6b1J/tostadora.jpg" alt="Tostadora de Pan" class="product-image" />
+                    <h3 class="product-name">Tostadora de Pan</h3>
+                    <p class="product-price">$30.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="12" data-name="Licuadora de Alta Potencia" data-price="80.00">
+                    <img src="https://i.ibb.co/tCJg6fT/licuadora.jpg" alt="Licuadora de Alta Potencia" class="product-image" />
+                    <h3 class="product-name">Licuadora de Alta Potencia</h3>
+                    <p class="product-price">$80.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="13" data-name="Batidora de Pedestal" data-price="150.00">
+                    <img src="https://i.ibb.co/S68vH3x/batidora-pedestal.jpg" alt="Batidora de Pedestal" class="product-image" />
+                    <h3 class="product-name">Batidora de Pedestal</h3>
+                    <p class="product-price">$150.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+                <div class="product-card" data-id="14" data-name="Batidora de Mano" data-price="60.00">
+                    <img src="https://i.ibb.co/qF4Jq82/batidora-mano.jpg" alt="Batidora de Mano" class="product-image" />
+                    <h3 class="product-name">Batidora de Mano</h3>
+                    <p class="product-price">$60.00</p>
+                    <button class="btn add-to-cart-btn">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3 class="footer-heading">Sobre nosotros</h3>
+                <p class="footer-text">
+                    Somos una tienda dedicada a ofrecer los mejores productos a precios
+                    competitivos.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Enlaces rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Inicio</a></li>
+                    <li><a href="#" class="footer-link">Tienda</a></li>
+                    <li><a href="#" class="footer-link">Contacto</a></li>
+                    <li><a href="#" class="footer-link">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-heading">Síguenos</h3>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="social-icon-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">© 2024 Market Jeaks. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Funcionalidad del Carrusel
+            const carousel = document.querySelector('.carousel');
+            const leftButton = document.querySelector('.carousel-button.left-btn');
+            const rightButton = document.querySelector('.carousel-button.right-btn');
+
+            if (carousel && leftButton && rightButton) {
+                leftButton.addEventListener('click', () => {
+                    carousel.scrollBy({ left: -200, behavior: 'smooth' });
+                });
+
+                rightButton.addEventListener('click', () => {
+                    carousel.scrollBy({ left: 200, behavior: 'smooth' });
+                });
+            }
+
+            // Funcionalidad del Carrito de Compras
+            const cartCountSpan = document.querySelector('.cart-count');
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            function updateCartCount() {
+                cartCountSpan.textContent = cart.length;
+            }
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const productCard = event.target.closest('.product-card');
+                    const productId = productCard.dataset.id;
+                    const productName = productCard.dataset.name;
+                    const productPrice = parseFloat(productCard.dataset.price);
+
+                    const product = {
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                    };
+
+                    cart.push(product);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartCount();
+                    alert(`${productName} ha sido añadido al carrito.`);
+                });
+            });
+
+            // Actualizar el contador del carrito al cargar la página
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>

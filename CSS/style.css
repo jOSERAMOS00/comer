@@ -1,0 +1,420 @@
+/*==========================================================
+  ESTILOS GENERALES
+  ==========================================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*==========================================================
+  ENCABEZADO (HEADER)
+  ==========================================================*/
+.header {
+    background: #00a8e8;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 110px;
+    margin-right: 10px;
+}
+
+.main-nav .nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav .nav-list li {
+    margin-left: 20px;
+}
+
+.main-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.main-nav .nav-link:hover {
+    color: #00171f;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-bar .search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar .search-btn {
+    background-color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #ddd;
+}
+
+.search-bar .search-btn i {
+    color: #003459;
+}
+
+/*==========================================================
+  SECCIÓN HERO
+  ==========================================================*/
+.hero-section {
+    background: url('andrew-neel-Gu1vRNMmvUY-unsplash.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: left;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #00171f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #003459;
+}
+
+/*==========================================================
+  CARRUSEL DE CATEGORÍAS
+  ==========================================================*/
+.category-carousel-section {
+    padding: 20px 0;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1010px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.carousel-item:hover {
+    transform: scale(1.1);
+}
+
+.carousel-icon {
+    max-width: 80px;
+    height: auto;
+}
+
+.category-name {
+    text-decoration: none;
+    color: #00a8e8;
+    margin-top: 5px;
+}
+
+.category-name:hover {
+    color: #00171f;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    /* Estilos para las nuevas flechas */
+    display: flex; /* Centra el ícono */
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-button.left-btn {
+    left: 0;
+}
+
+.carousel-button.right-btn {
+    right: 0;
+}
+
+/*==========================================================
+  SECCIÓN DE PRODUCTOS
+  ==========================================================*/
+.products-section {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card .product-name {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.product-card .product-price {
+    font-size: 1.1rem;
+    color: #003459;
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    background: #00a8e8;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #007ea7;
+}
+
+/*==========================================================
+  PIE DE PÁGINA (FOOTER)
+  ==========================================================*/
+.footer {
+    background: #007ea7;
+    color: #00171f;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links .footer-link {
+    color: #00171f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links .footer-link:hover {
+    color: #fff;
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icon-link {
+    color: #00171f;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon-link:hover {
+    color: #fff;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*==========================================================
+  MEDIA QUERIES (Responsividad)
+  ==========================================================*/
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin: 10px 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
